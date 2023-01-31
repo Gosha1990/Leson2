@@ -29,6 +29,46 @@
 
 ## Работа с таблицами
 
+Для того чтобы создать таблицу необходимо использовать Вертикальные кавычки(|)  в начале и в конце строчки,и на границах каждого столбца.
+Вторая строчка состоит полностью из знаков (-) в пределах каждого столбца.
+
+|This is   | a simple  |table header|
+|----------|-----------|------------|
+|table     |data       |here        |
+|it doesn't|actually   |have to line up nicely!|
+
+
+
+Так же можно сдвигать слова к другому краю столбца с помощью (:) в начале строки столбца.
+
+| Fun                  | With                 | Tables          |
+| :------------------- | -------------------: |:---------------:|
+| left-aligned column  | right-aligned column | centered column |
+| $100                 | $100                 | $100            |
+| $10                  | $10                  | $10             |
+| $1                   | $1                   | $1              |
+
+
+
+Длинные слова в таблице Markdown могут привести к тому, что таблица сдвинется вправо и станет нечитаемой. Эту проблему можно решить, разрешив отрисовке на сайте документации автоматически вставлять разрывы строк внутри слов при необходимости. Нужно просто заключить таблицу в настраиваемый класс [!div class="mx-tdBreakAll"].
+
+Далее приведен пример Markdown таблицы с тремя строками, которая будет заключена с помощью div с классом mx-tdBreakAll.
+
+> [!div class="mx-tdBreakAll"]
+> |Name|Syntax|Mandatory for silent installation?|Description|
+> |-------------|----------|---------|---------|
+> |Quiet|/quiet|Yes|Runs the installer, displaying no UI and no prompts.|
+> |NoRestart|/norestart|No|Suppresses any attempts to restart. By default, the UI will prompt before restart.|
+> |Help|/help|No|Provides help and quick reference. Displays the correct use of the setup command, including a list of all options and behaviors.|
+
+
+Таблицы матриц данных
+Таблица матрицы данных содержит заголовок и взвешенный первый столбец. Она позволяет создать матрицу с пустой ячейкой в верхнем углу слева. Пользовательскую разметку Markdown для таблиц матриц данных можно найти на сайте документации:
+
+|                  |Header 1 |Header 2|
+|------------------|---------|--------|
+|**First column A**|Cell 1A  |Cell 2A |
+|**First column B**|Cell 1B  |Cell 2B |
 ## Цитаты
 
 ## Заключение
